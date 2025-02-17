@@ -1,0 +1,43 @@
+1. GET /users
+URL: http://localhost:8080/users
+Method: GET
+Description: Retrieves all users from the database.
+2. GET /users/{id}
+URL: http://localhost:8080/users/{id}
+Replace {id} with the actual user ID you want to retrieve, e.g., http://localhost:8080/users/1.
+Method: GET
+Description: Retrieves the details of a specific user by their ID.
+3. POST /users
+URL: http://localhost:8080/users
+Method: POST
+Headers:
+Content-Type: application/json
+Body (JSON):
+json
+Copy
+Edit
+{
+  "name": "John Doe",
+  "email": "john.doe@example.com"
+}
+Description: Creates a new user.
+4. PUT /users/{id}
+URL: http://localhost:8080/users/{id}
+Replace {id} with the user ID you want to update, e.g., http://localhost:8080/users/1.
+Method: PUT
+Headers:
+Content-Type: application/json
+Body (JSON):
+json
+Copy
+Edit
+{
+  "name": "Jane Doe",
+  "email": "jane.doe@example.com"
+}
+Description: Updates the details of a specific user by ID.
+5. DELETE /users/{id}
+URL: http://localhost:8080/users/{id}
+Replace {id} with the ID of the user you want to delete, e.g., http://localhost:8080/users/1.
+Method: DELETE
+Description: Deletes a specific user by ID
